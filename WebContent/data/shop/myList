@@ -1,0 +1,27 @@
+{
+	"code":1,
+	"msg":"操作成功",
+	"data":{ 
+		"pagesize":10,
+		"cpage":1,
+		"pagecount":10,
+		"totalsize":99,
+		"list":[
+			{
+				"id":1,
+				"sname":"北路酒店",
+				"img":"../static/img/12.jpg"
+			},
+			{
+				"id":2,
+				"sname":"西路酒店",
+				"img":"../static/img/12.jpg"
+			},
+			{
+				"id":3,
+				"sname":"东路酒店",
+				"img":"../static/img/12.jpg"
+			}
+		]
+	}
+}

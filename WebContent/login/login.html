@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+</head>
+<body ng-app="app" ng-controller="login" class="container text-center">
+	<div class="text-center" style="margin-top: 200px;">
+			用户名：<input class="form-control" placeholder="请输入用户名"><br>
+			密码：<input type="password" class="form-control" placeholder="请输入密码"><br>
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 text-left">
+				<a href="reg.html" class="btn btn-primary">注册</a>
+			</div>
+			<div class="col-xs-6 col-sm-6 text-right">
+				<a href="../order/main.html" class="btn btn-success">登陆</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/angular.js/1.7.0/angular.min.js"></script>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+	var app = angular.module('app', []);
+	app.controller('login', function($scope) {
+	});
+</script>
+</html>

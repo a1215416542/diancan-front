@@ -1,0 +1,58 @@
+1.公共说明
+	基础变量：
+	host=http:127.0.0.1:8080
+	code: -2服务器错误  -1需要登录   1需要登录  2访问次数受限
+2.登陆
+	url:{{host}}/login
+	method:post
+	param:
+		un:用户名
+		pwd:密码
+		return:
+		{
+			code:1,//返回码
+			msg:"操作成功"
+			date:{
+				"flag":"true"
+			}
+		}
+3.注册
+
+4.查询酒店列表  分页
+	url:{{host}}/main/myList/{cpage}
+	method:get
+	param:
+		{cpage}:当前页
+		return:
+		{
+			code:1,//返回码
+			msg:"操作成功"
+			date:{
+				pagesize:10,
+				cpage:1,
+				pagecount:10,
+				total:100,
+				list:[
+					{
+						"id":1,
+						"sname":"北路酒店",
+						"img":"../static/img/12.jpg"
+					},
+					{
+						"id":2,
+						"sname":"西路酒店",
+						"img":"../static/img/12.jpg"
+					},
+					{
+						"id":3,
+						"sname":"东路酒店",
+						"img":"../static/img/12.jpg"
+					}
+				]
+			}
+		}
+5.查询酒菜列表  分页
+
+6.添加菜品到订单
+
+7.提交成功，返回首页
